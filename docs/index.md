@@ -9,4 +9,5 @@ Here's a test list
 
 > And here's a test quote in the test subsection.
 
+## Syllabus
 And here's a [link to the syllabus](syllabus/index.html)
