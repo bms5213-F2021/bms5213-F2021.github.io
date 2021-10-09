@@ -90,20 +90,20 @@ For the first half of the course, class time will primarily concentrate on essen
 *Week 2:* Distributions, estimation, & hypothesis testing <br />
 *Week 3:* Inference, regression, & midterm exam <br />
 *Week 4:* Non-parametric tests, survival analysis <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1: Compare two analyses (presentations) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1: Compare two analyses (presentations) <br />
 *Week 5:* Project 2: Perform an analysis (written & presentations) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Simulations <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Simulations <br />
 *Thanksgiving Break* <br />
 *Week 7:* Project 3: Compare performed and published analysis (written & presentations) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Surveys <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Surveys <br />
 *Week 8:* Project 4: Evaluate a published analysis (written) & Final exam <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Clustering & Dimensionality Reduction <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Clustering & Dimensionality Reduction <br />
 
 <a name="Deadlines"></a>
 **Deadlines** <br />
 
 | Assessment         | Due Date                |
-| :----------------- | :---------------------: |
+| :----------------: | :---------------------: |
 | Midterm            | November 4              |
 | Project #1         | November 11             |
 | Project #2         | November 18             |
