@@ -35,7 +35,7 @@ Data Scientists at Johns Hopkins have proposed the following [7 'discrete' stage
 6. Communicate the results
 7. Make your analysis reproducible
 
-In *The Art of Data Science: A Guide for Anyone Who Works with Data* by Roger Peng and Elizabeth Matsul, they reduce these 7 steps to just 5:
+In *The Art of Data Science: A Guide for Anyone Who Works with Data* by Roger Peng and Elizabeth Matsui, they reduce these 7 steps to just 5:
 
 1. Stating and refining the question
 2. Exploring the data
@@ -57,7 +57,7 @@ The first step of a data analysis project is to define a question.
 
 ### What makes a good question?
 
-The question should have several qualities which Peng and Matsul describe. These include characteristics such as the question being of interest to your audience. Whoever the audience is (collaborators, PI, grant awarding committees, the public), be sure to understand and communicate what question you think you want to answer with the data before performing an analysis and finding out that the answer was not in line with the audience's interest/thoughts.
+The question should have several qualities which Peng and Matsui describe. These include characteristics such as the question being of interest to your audience. Whoever the audience is (collaborators, PI, grant awarding committees, the public), be sure to understand and communicate what question you think you want to answer with the data before performing an analysis and finding out that the answer was not in line with the audience's interest/thoughts.
 
 Ideally, the question will also be novel, or it hasn't been answered before. Perhaps an answer has been attempted, but it wasn't a satisfactory answer and either the data that you will be analyzing or the way in which you will be analyzing it, will lead to a more satisfactory answer.
 
@@ -82,4 +82,4 @@ It's important to know what type of question you are asking to make sure that yo
 * Inferential: An inferential question takes the hypothesis generated from an exploratory question and attempts to observe whether the relationship holds in a different dataset. For example, we could test different genes in different cell types and see if their expression levels are correlated with their accessibility. If the correlation stands in a representative sample of genes, this supports that the relationship may be true for all genes on average. Ideally, an inferential analysis is moving from a small sample (just geneX in a few cell types) closer to population scale (all genes in a lot of cell types).
 * Predictive: A predictive question attempts to use a subset of information/measurements/features to predict an another measurement or feature (an outcome) in new data. Returning to a gene's expression and accessibility, we could pose a question such as, "Can the accessibility of a gene in cell type A be used to predict that gene's expression level in cell type A?"
 * Causal: A causal question attempts to solidify a cause-and-effect relationship by asking whether changing one factor will change another factor. Suppose following along with our gene expression and accessibility analysis, we somehow changed the accessibility of genes in the population (made accessible genes unaccessible and made unaccessible genes accessible) and then asked how did the expression levels change. This would be a causal question.
-* Mechanistic: What if we found that yes a change in accessibility of a gene on average led to a change in expression? Would we be able to answer *how* the change in accessibility led to the change in expression? No, because we haven't asked a mechanistic question yet. A mechanistic question looks for the mechanism by which or how a causal relationship is carried out. This is often achieved by showing that changing one measurement *always* leads to a specific, deterministic outcome rather than an on average outcome. Leek and Peng remark that this type of a question is challenging and rarely achievable outside of the field of engineering. 
+* Mechanistic: What if we found that yes a change in accessibility of a gene on average led to a change in expression? Would we be able to answer *how* the change in accessibility led to the change in expression? No, because we haven't asked a mechanistic question yet. A mechanistic question looks for the mechanism by which or how a causal relationship is carried out. This is often achieved by showing that changing one measurement *always* leads to a specific, deterministic outcome rather than an on average outcome. Leek and Peng remark that this type of a question is challenging and rarely achievable outside of the field of engineering.
