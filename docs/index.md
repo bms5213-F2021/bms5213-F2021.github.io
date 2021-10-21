@@ -5,7 +5,7 @@
 
 * Week 1
   * 10/19/21 -- [Introduction to Biostats](lectures/week1_pt1.html)
-  * 10/21/21 -- Collecting, displaying, & describing data
+  * 10/21/21 -- [Collecting, displaying, & describing data](lectures/week1_pt2.html)
 
 ### Pre-course info
 * [Github](https://github.com) will be used to post and turn in all assignments as well as directly provide feedback to students. If you do not have a GitHub account, create a free account.
