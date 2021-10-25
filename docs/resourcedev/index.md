@@ -1,1 +1,5 @@
-Resources for the class will be linked here.
+# Resources
+
+## Using Github
+
+* [Brief tutorial on using GitHub to turn in your homework](tutorials/github.md) 
