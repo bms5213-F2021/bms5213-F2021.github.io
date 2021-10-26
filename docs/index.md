@@ -9,7 +9,7 @@
   * 10/26/21 -- [Distributions & Estimation](lectures/week2_pt1.html)
 
 ### Resources
-* [GitHub tutorial for homework and projects](resouredev/tutorials/github.html)
+* [GitHub tutorial for homework and projects](resourcedev/tutorials/github.html)
 
 
 ### Pre-course info
