@@ -2,4 +2,4 @@
 
 ## Using Github
 
-* [Brief tutorial on using GitHub to turn in your homework](tutorials/github.md) 
+* [Brief tutorial on using GitHub to turn in your homework](tutorials/github.html) 
