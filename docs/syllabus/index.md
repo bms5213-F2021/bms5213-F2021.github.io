@@ -108,7 +108,7 @@ For the first half of the course, class time will primarily concentrate on essen
 | Project #1         | November 11             |
 | Project #2         | November 18             |
 | Project #3         | December 2              |
-| Final Exam         | December 9              |
+| Final Exam         | December 11, by 11AM CDT|
 | Project #4         | December 11, by 11AM CDT|
 {:.table.table-striped.well}
 
@@ -162,8 +162,8 @@ Because the overarching goal of this course is to aid your training in performin
 | Week 7 | 11/30| Quiz 10            |                     |          |
 |        | 12/2 | Quiz 11            |Project 4, Final Exam| Project 3|
 | Week 8 | 12/7 | Quiz 12            |                     |          |
-|        | 12/9 | Study Day          |                     |Final Exam|
-|        | 12/11|                    |                     | Project 4|
+|        | 12/9 | Study Day          |                     ||
+|        | 12/11|                    |                     | Project 4, Final Exam|
 {:.table.table-striped.well}
 
 ## Attendance, Academic Integrity, Code of Conduct, & Accommodations
