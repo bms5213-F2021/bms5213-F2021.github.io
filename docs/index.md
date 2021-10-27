@@ -10,6 +10,7 @@
 
 ### Resources
 * [GitHub tutorial for homework and projects](resourcedev/tutorials/github.html)
+* [Outside primer/intro on probability](https://www0.gsb.columbia.edu/faculty/pglasserman/B6014/probability.pdf)
 
 
 ### Pre-course info
