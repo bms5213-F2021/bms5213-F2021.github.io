@@ -104,7 +104,7 @@ For the first half of the course, class time will primarily concentrate on essen
 
 | Assessment         | Due Date                |
 | :----------------: | :---------------------: |
-| Midterm            | November 4              |
+| Midterm            | November 9              |
 | Project #1         | November 11             |
 | Project #2         | November 18             |
 | Project #3         | December 2              |
@@ -150,11 +150,11 @@ Because the overarching goal of this course is to aid your training in performin
 | :----: | :--: | :----------------: | :-----------------: | :------: |
 | Week 1 | 10/19|                    | HW 1                |          |
 |        | 10/21| Quiz 1             |                     |          |
-| Week 2 | 10/26| Quiz 2             | HW 2                | HW 1     |
-|        | 10/28| Quiz 3             | Midterm             |          |
-| Week 3 | 11/2 | Quiz 4             | HW 3                | HW 2     |
-|        | 11/4 | Quiz 5             | Project 1           | Midterm  |
-| Week 4 | 11/9 | Quiz 6             | HW 4                | HW 3     |
+| Week 2 | 10/26| Quiz 2             |                     | HW 1     |
+|        | 10/28| Quiz 3             | Midterm, HW2        |          |
+| Week 3 | 11/2 | Quiz 4             | HW 3                |          |
+|        | 11/4 | Quiz 5             | Project 1           | HW2      |
+| Week 4 | 11/9 | Quiz 6             | HW 4                | HW 3, Midterm|
 |        | 11/11| Quiz 7             | Project 2           | Project 1|
 | Week 5 | 11/16| Quiz 8             |                     | HW 4     |
 |        | 11/18| Quiz 9             | Project 3           | Project 2|
@@ -162,7 +162,7 @@ Because the overarching goal of this course is to aid your training in performin
 | Week 7 | 11/30| Quiz 10            |                     |          |
 |        | 12/2 | Quiz 11            |Project 4, Final Exam| Project 3|
 | Week 8 | 12/7 | Quiz 12            |                     |          |
-|        | 12/9 | Study Day          |                     ||
+|        | 12/9 | Study Day          |                     |          |
 |        | 12/11|                    |                     | Project 4, Final Exam|
 {:.table.table-striped.well}
 
