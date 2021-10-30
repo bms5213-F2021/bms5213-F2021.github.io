@@ -14,7 +14,9 @@ See Canvas for zoom link.<br />
 
 <a name="OH"></a>
 **Office Hours** <br />
-TBA & By appointment.
+Fridays 7-8 A.M. CDT, (see Canvas for zoom link)<br />
+Fridays 2:30-3:30 P.M. CDT, (see Canvas for zoom link)<br />
+& By appointment.
 
 <a name="CourseWebsite"></a>
 **Course Website** <br />
@@ -26,7 +28,7 @@ TBA & By appointment.
 * Installation of the R software will be covered in the first class session.
 * Check the course website for course material/resources each week.
 * This course meets twice a week on Tuesdays and Thursdays for 8 weeks, starting Tues 10/19/2021.
-* Every course meeting from 10/21/2021 through 12/7/2021 will have a low stakes quiz covering information from the previous class and the reading for the current class. Students will be split into groups and given time to discuss & review before quizzes.
+* Every course meeting from 10/21/2021 through 12/7/2021 will have a low stakes quiz, due before class, covering information from the previous class and the reading for the current class.
 * Homework is due at the beginning of class, the week after it is assigned.
 
 ## Description, Goals, & Objectives
@@ -88,16 +90,17 @@ This course is primarily designed for masters students who will need to apply pr
 For the first half of the course, class time will primarily concentrate on essential statistical topics which will be covered in detail. For the last half of the course, class time will primarily focus on the projects and presentations. If time allows, brief showcase lectures of non-essential, but meaningful topics will be included. <br /><br />
 *Week 1:* Study questions, analysis steps, collecting, displaying, & describing data <br />
 *Week 2:* Distributions, estimation, & hypothesis testing <br />
-*Week 3:* Inference, regression, & midterm exam <br />
-*Week 4:* Non-parametric tests, survival analysis <br />
+*Week 3:* Distributions, estimation, & hypothesis testing, continued <br />
+*Week 4:*  <br /> Inference, regression, & midterm exam <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1: Compare two analyses (presentations) <br />
-*Week 5:* Project 2: Perform an analysis (written & presentations) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Simulations <br />
+*Week 5:* Non-parametric tests, survival analysis <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 2: Evaluate a published analysis (written) <br /> <br />
 *Thanksgiving Break* <br />
-*Week 7:* Project 3: Compare performed and published analysis (written & presentations) <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Surveys <br />
-*Week 8:* Project 4: Evaluate a published analysis (written) & Final exam <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Showcase: Clustering & Dimensionality Reduction <br />
+*Week 7:* Project 3: Perform an analysis (written & presentations) <br />
+*Week 8:* Project 4: Compare performed and published analysis (written) & Final exam <br />
+
+
+
 
 <a name="Deadlines"></a>
 **Deadlines** <br />
@@ -126,24 +129,6 @@ Because the overarching goal of this course is to aid your training in performin
 
 <br />**Note:** This course will be graded out of 100 while 16 + 10 + 8 + 8 + 60 = 102. <br />
 
-
-<a name="ClassSchedule"></a>
-**Typical Class Schedule**
-
-| Event                                     | Time (min)  |
-| :---------------------------------------: | :----------:|
-| Welcome & Announcements                   | 5           |
-| Group Discussion of HW & Reading          | 20          |
-| Low Stakes Quiz                           | 15          |
-| Interactive Lecture or Presentations Pt 1 | 45          |
-| Break                                     | 15          |
-| Interactive Lecture or Presentations Pt 2 | 45          |
-| Break                                     | 15          |
-| Interactive Lecture Using R or Showcase   | 45          |
-| In class HW & Project Work time           | 25          |
-{:.table.table-striped.well}
-
-<a name="CourseSchedule"></a>
 **Full Course Schedule**
 
 | Week   | Date | Notes              | Assigned            | Due      |
@@ -152,14 +137,14 @@ Because the overarching goal of this course is to aid your training in performin
 |        | 10/21| Quiz 1             |                     |          |
 | Week 2 | 10/26| Quiz 2             |                     | HW 1     |
 |        | 10/28| Quiz 3             | Midterm, HW2        |          |
-| Week 3 | 11/2 | Quiz 4             | HW 3                |          |
+| Week 3 | 11/2 | Quiz 4, No class   |                     |          |
 |        | 11/4 | Quiz 5             | Project 1           | HW2      |
-| Week 4 | 11/9 | Quiz 6             | HW 4                | HW 3, Midterm|
+| Week 4 | 11/9 | Quiz 6             | HW 3                | Midterm  |
 |        | 11/11| Quiz 7             | Project 2           | Project 1|
-| Week 5 | 11/16| Quiz 8             |                     | HW 4     |
+| Week 5 | 11/16| Quiz 8             | HW4                 | HW 3     |
 |        | 11/18| Quiz 9             | Project 3           | Project 2|
-| Week 6 |      | Thanksgiving Break |           |          |
-| Week 7 | 11/30| Quiz 10            |                     |          |
+| Week 6 |      | Thanksgiving Break |                     |          |
+| Week 7 | 11/30| Quiz 10            |                     | HW 4     |
 |        | 12/2 | Quiz 11            |Project 4, Final Exam| Project 3|
 | Week 8 | 12/7 | Quiz 12            |                     |          |
 |        | 12/9 | Study Day          |                     |          |
