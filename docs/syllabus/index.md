@@ -91,10 +91,10 @@ For the first half of the course, class time will primarily concentrate on essen
 *Week 1:* Study questions, analysis steps, collecting, displaying, & describing data <br />
 *Week 2:* Distributions, estimation, & hypothesis testing <br />
 *Week 3:* Distributions, estimation, & hypothesis testing, continued <br />
-*Week 4:*  <br /> Inference, regression, & midterm exam <br />
+*Week 4:* Inference, regression, & midterm exam <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 1: Compare two analyses (presentations) <br />
 *Week 5:* Non-parametric tests, survival analysis <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 2: Evaluate a published analysis (written) <br /> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project 2: Evaluate a published analysis (written) <br />
 *Thanksgiving Break* <br />
 *Week 7:* Project 3: Perform an analysis (written & presentations) <br />
 *Week 8:* Project 4: Compare performed and published analysis (written) & Final exam <br />
