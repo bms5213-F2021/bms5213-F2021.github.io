@@ -69,6 +69,10 @@ For a random variable or set of data to be distributed according to a specific d
 
 In biology, there are three common probability distributions which biological data are often distributed according to. These are the *Binomial*, *Poisson*, and *Gaussian (Normal)* distributions. The Binomial and Poisson distributions are discrete probability distributions while the Normal is a continuous probability distribution.
 
+#### Uniform Distribution
+
+We briefly discussed a uniform distribution in class, and for the continuous case and some range of values between a and b (an inclusive range [a, b]), there are an infinite number of values possible, and every value has an equal probability density. For the discrete case and some range of values between a and b (again an inclusive range [a, b]), there is a finite number of values possible, and every value has an equal probability. The PDF of a continuous uniform distribution is a rectangular shape. It is a straight horizontal line with veritcal lines at a and b [as seen here in Wolfram MathWorld](https://mathworld.wolfram.com/UniformDistribution.html). The PMF of a discrete uniform distribution are vertical lines of the same height at every discrete value a to b.
+
 ### Common Distributions -- Discrete
 
 #### Binomial Distribution
@@ -76,49 +80,96 @@ In biology, there are three common probability distributions which biological da
 The Binomial distribution is a probability distribution that describes the number of successes that are observed in n independent trials where the trials share the same probability of success.
 
 The assumptions/characteristics of the Binomial distribution are
-*
-*
-*
-*
+* Whatever random variable or process is being considered has a **fixed number of trials/observations**, we denote this `n`
+* The trials are **independent** meaning that the outcome of one doesn't affect the outcome of another
+* Each trial can only have two possible outcomes: success or failure (AKA positive or negative; 0 or 1; yes or no; etc.)
+* The probability of success remains the same in all trials for a given random variable/process. This probability is often denoted as `p`.
+  * Because there are only two outcomes, the probability of failure (often denoted `q`) must equal `1-p`.
 
-The PMF of the Binomial distribution is:
+A single trial which has only two possible outcomes and has a known probability of success is called a *Bernoulli trial*. A random variable which is distributed according to the Binomial distribution is really just a set of independent (outcome of one doesn't affect another outcome) and identically distributed (same probability of success across trials) Bernoulli trials. Therefore, if we only had a probability of success, we would have a Bernoulli distribution. But if we have a probability of success together with a number of independent trials, we define a Binomial distribution.
 
-We can use the `dbinom()` function in R for this.
+Parameters:
+* The expected value of a Binomial distribution is `np`.
+* The variance of a Binomial distribution is `npq` = `np(1-p)`
 
-The CDF of the Binomial distribution is:
+PMF
+* We can use the `dbinom(x, size, prob)` function in R for this.
+* The PMF of the Binomial distribution is:
+![binom pmf](../figures/binom_pmf.png)
 
-We can use the `pbinom()` function in R for this.
 
-We can generate from the Binomial distribution in R using the `rbinom()` function.
+CDF
+* We can use the `pbinom(x, size, prob)` function in R for this.
 
-Of special note, this distribution appears to break our requirement that random variables and distributions be numerical, not categorical data. 
+We can generate a sample of data from the Binomial distribution in R using the `rbinom(n, size, prob)` function.
+
+The parameters for these functions include `x`, `n`, `prob`, & `size`.
+* `x` or the value/# of successes of interest for the number of trials. For the PMF, we ask the P(X = x) for this `x`. For the CDF, we ask the P(X <= x) for this `x`. This value can be anywhere in the inclusive range [0, n].
+* `n` is the number of trials
+* `prob` is the probability of success (what we called `p` earlier)
+* `size` is the number of observations. How does this differ from the `n` parameter? Great question -- we'll have an example in class in week 3 that looks at this more deeply.
+
+Of special note, this distribution appears to break our requirement that random variables and distributions be numerical, not categorical data as the outcomes are binary and clearly categorical nominal data. This exception seems to be allowed because success/failure can be encoded as 0 and 1 and so it's just a discrete distribution over the set of values {0, 1}.
+
+A non-biological example of a Binomial distribution would be coin tosses. What are biological examples of datasets or variables that are distributed according to the Binomial distribution?
 
 #### Poisson Distribution
 
 The Poisson distribution is a probability distribution used to model the number of times a rare event occurs.
 
-The assumptions/characterists of the Poisson distribution are
-*
-*
-*
+The assumptions/characteristics of the Poisson distribution are
+* The random variable X is the number of occurrences of an event in some interval of time (where the occurrence is rare)
+* The occurrences must be random
+* The occurrences must be independent of each other
+* The occurrences must be uniformly or randomly distributed over the interval being used (e.g. there is nothing causing them to cluster in one part of the interval)
 
-The PMF of the Poisson distribution is:
+Parameters:
+* The expected value and the variance of the Poisson distribution are equal to each other and it is the mean or the mean number of occurrences of the event in the interval. We'll call this lambda.
+* Because of this, we only need the mean to define a Poisson distribution.
 
-We can use the `dpois()` function in R for this.
+PMF
+* We can use the `dpois(x, lambda)` function in R for this.
+* The PMF of the Poisson distribution is:
+![poisson pmf](../figures/pois_pmf.png)
 
-The CDF of the Poisson distribution is:
+CDF
+* We can use the `ppois(x, lambda)` function in R for this.
 
-We can use the `ppois()` function in R for this.
+We can generate from the Poisson distribution in R using the `rpois(n, lambda)` function.
 
-We can generate from the Poisson distribution in R using the `rpois()` function.
+The parameters for these functions include
+* `x`. This is the number of occurrences For the PMF, we ask the P(X = x) for this `x`. For the CDF, we ask the P(X <= x) for this `x`. The inclusive range for this is [0, infinity) where the possible values of x has no upper limit, but it is still discrete and countable.
+* `lambda`. This is the mean or expected value of the distribution.
+* `n`. This is the number of values to return if generating from the distribution.
+
+Other notes about the Poisson distribution include that it can appear skewed (with a long tail) or it can appear symmetrical, but it doesn't have to be either. Further, for large n, and small probabilities of success, the Poisson distribution can be used to approximate a Binomial distribution. This is because the Poisson distribution is for rare events (low probability of success).
 
 ### Common Distributions -- Continuous
-
-#### Uniform Distribution
 
 #### Normal (Gaussian) Distribution
 
 The Normal distribution is a symmetric, bell-shaped probability distribution with mean mu and standard deviation sigma. If observations follow a normal distribution, the interval (mu +- 2*sigma) will contain 95% of the observations.  
+
+The *standard normal distribution* has a mean of 0 and variance and standard deviation of 1.  
+
+Parameters
+* The expected value is mu or the mean
+* The variance is sigma-squared or the square of the standard deviation.
+
+PDF
+* We can use the `dnorm(x, mu, sigma)` function in R for this.
+* The PDF of the Normal distribution is:
+![norm pdf](../figures/norm_pdf.png)
+
+CDF
+* We can use the `pnorm(x, mu, sigma)` function in R for this.
+
+We can generate from the Normal distribution in R using the `rnorm(n, mu, sigma)` function
+The parameters for these functions include
+* `x`. This is the number we ask about with the PDF or the CDF. For the CDF, we ask the P(X <= x) for this `x`. The range for this is (-infinity, infinity) where the possible values of x has no lower or upper limit, being continuous and infinite.
+* `mu`. This is the mean or expected value of the distribution.
+* `sigma`. This is the standard deviation of the distribution.
+* `n`. This is the number of values to return if generating from the distribution.
 
 
 ### Statistical Inference
@@ -129,10 +180,19 @@ The Normal distribution is a symmetric, bell-shaped probability distribution wit
 
 #### Null vs Alternative Hypothesis
 
-The *null hypothesis* is the hypothesis being tested about a population and refers to a situation in which no difference exists. In technical terms, the outcome of a hypothesis test is to either *reject* or *fail to reject* the null hypothesis.  
+The *null hypothesis* (H0 or H-naught) is the hypothesis being tested about a population and refers to a situation in which no difference exists. In technical terms, the outcome of a hypothesis test is to either *reject* or *fail to reject* the null hypothesis.  
 
 The *alternative hypothesis* is the opposite of the *null hypothesis*, stating that a difference does exist. If a tailed alternative hypothesis, the direction of the difference is included. The *alternative hypothesis* is the conclusion when the *null hypothesis is rejected*.
 
+#### Rejection Region & alpha
+
+We will discuss in more detail what the rejection region and alpha cutoff values are for hypothesis testing in week 3, but in general, for this class period, we used the old adage that we would reject the null hypothesis for p < 0.05.
+
+#### Outcomes
+
+If we *fail to reject the null hypothesis*, this suggests that there is no statistically significant difference between whatever was compared. We may even say that random chance alone could explain any difference that is observed.
+
+If we *reject the null hypothesis*, this suggests that there is a statistically signficant difference between whatever was compared. We may even say that random chance alone could not explain any difference that was observed.
 
 ## Lecture Note Resources
 
