@@ -8,6 +8,8 @@
   * 10/21/21 -- [Collecting, displaying, & describing data](lectures/week1_pt2.html)
   * 10/26/21 -- [Distributions & Estimation](lectures/week2_pt1.html)
   * 10/28/21 -- [Distributions & Estimation cont.](lectures/week2_pt2.html)
+  * 11/02/21 -- No Class
+  * 11/04/21 -- [Statistical Inference & Hypothesis Testing](lectures/week3.html)
 
 ### Resources
 * [GitHub tutorial for homework and projects](resourcedev/tutorials/github.html)

@@ -53,7 +53,9 @@ The variance measures the spread of the random variable around its center or exp
 
 Note that the standard deviation is still the square root of the variance.
 
-### Variance -- Discrete cases
+Much like with the expected value, specific distributions often have specific formulas associated with them for calculating a distributions variance. These formulas utilize parameters from the definition of the distribution. However, we can use the above formula to find the variance for any random variable.
+
+#### Variance -- Discrete cases
 
 There are two formulas for finding the variance in the case of a discrete random variable. The first more closely matches the definition while the second is easier to compute manually.
 
@@ -63,7 +65,9 @@ There are two formulas for finding the variance in the case of a discrete random
 
 ### Common Distributions
 
-In biology, there are three common probability distributions which biological data are often distributed according to. For a random variable or set of data to be distributed according to a specific distribution,. These are the *Binomial*, *Poisson*, and *Gaussian (Normal)* distributions.  
+For a random variable or set of data to be distributed according to a specific distribution, that means the parameters of that distribution are assumed to be true for that random variable's population; also, any assumptions or characteristics of the distribution must be reflected in the random variable or dataset as well. This could be as simple as the data being discrete data for a discrete distribution. We'll see more complex requirements of several distributions soon.
+
+In biology, there are three common probability distributions which biological data are often distributed according to. These are the *Binomial*, *Poisson*, and *Gaussian (Normal)* distributions. The Binomial and Poisson distributions are discrete probability distributions while the Normal is a continuous probability distribution.
 
 ### Common Distributions -- Discrete
 
@@ -71,9 +75,42 @@ In biology, there are three common probability distributions which biological da
 
 The Binomial distribution is a probability distribution that describes the number of successes that are observed in n independent trials where the trials share the same probability of success.
 
+The assumptions/characteristics of the Binomial distribution are
+*
+*
+*
+*
+
+The PMF of the Binomial distribution is:
+
+We can use the `dbinom()` function in R for this.
+
+The CDF of the Binomial distribution is:
+
+We can use the `pbinom()` function in R for this.
+
+We can generate from the Binomial distribution in R using the `rbinom()` function.
+
+Of special note, this distribution appears to break our requirement that random variables and distributions be numerical, not categorical data. 
+
 #### Poisson Distribution
 
 The Poisson distribution is a probability distribution used to model the number of times a rare event occurs.
+
+The assumptions/characterists of the Poisson distribution are
+*
+*
+*
+
+The PMF of the Poisson distribution is:
+
+We can use the `dpois()` function in R for this.
+
+The CDF of the Poisson distribution is:
+
+We can use the `ppois()` function in R for this.
+
+We can generate from the Poisson distribution in R using the `rpois()` function.
 
 ### Common Distributions -- Continuous
 
@@ -102,3 +139,4 @@ The *alternative hypothesis* is the opposite of the *null hypothesis*, stating t
 * Basic & Clinical Biostatistics (5th Edition), by Susan White, published by McGraw Hill
 * Biostatistics for the Biological and Health Sciences (2nd Edition), by Marc Triola, Mario F. Triola, & Jason Roy, published by Pearson
 * Modern Statistics for Modern Biology (2019), by Susan Holmes & Wolfgang Huber, published by Cambridge University Press
+* [Intro to probability website](https://dlsun.github.io/probability/) by [Dennis Sun](https://dlsun.github.io/)
