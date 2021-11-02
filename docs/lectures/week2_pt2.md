@@ -174,6 +174,8 @@ The parameters for these functions include
 
 ### Statistical Inference
 
+Briefly, [statistical inference is](http://jtleek.com/ads2020/week-8.html#a-framework-for-modeling) the practice of using probability to sample from a population, take measurements on (summarize) that sample, and the sample and summaries of the sample to make inferences about something or some characteristics on the population on average. The characteristics of the population that you are estimating from the summary values (from the sample) are the parameters. We will use information about sources of uncertainty to infer how accurate or precise are estimates are and can use hypothesis testing to look for differences between samples or between samples and a population.
+
 ### Hypothesis testing intro
 
 *Hypothesis testing* is an approach used in statistical inference to compare samples and populations or to compare samples with each other.
@@ -184,15 +186,30 @@ The *null hypothesis* (H0 or H-naught) is the hypothesis being tested about a po
 
 The *alternative hypothesis* is the opposite of the *null hypothesis*, stating that a difference does exist. If a tailed alternative hypothesis, the direction of the difference is included. The *alternative hypothesis* is the conclusion when the *null hypothesis is rejected*.
 
-#### Rejection Region & alpha
+#### Types of tests
 
-We will discuss in more detail what the rejection region and alpha cutoff values are for hypothesis testing in week 3, but in general, for this class period, we used the old adage that we would reject the null hypothesis for p < 0.05.
+* Two-sided: alternative hypothesis says there's a difference, but no know direction for the difference. Whatever is being compared could be larger than or less than what it is being compared to.
+* one-tailed: alternative hypothesis says there's a difference, and the direction for the difference
+  * left-tailed: Whatever is being compared is assumed to always be less than what it is being compared to.
+  * right-tailed: Whatever is being compared is assumed to always be greater than what it is being compared to.
+
+In class we very briefly discussed how to choose which type of test to use, and we will discuss this in much greater detail in week 3. An important point is to make sure that for one-tailed tests, these are only being used when you have an expectation prior to performing the hypothesis test about the direction due to biology and not something called p-bashing. One-tailed tests can obtain statistical significance with a smaller deviation from the hypothesized value than a two-sided test with the same data. If in doubt that you know for sure the direction of the relationship, go with a two-sided test. If you need to consider positive and negative effects/relationships, go with a two-sided.
+
+#### Test-statistic, rejection region, significance levels, alpha, and p-value
+
+We will formally define test-statistic and p-value in week 3 and discuss in more detail what the rejection region and alpha cutoff values are for hypothesis testing, but in general, for this class period, we used the old adage that we would reject the null hypothesis for p < 0.05.
+
+We also briefly discussed (without calling it this) that the rejection region or the critical region is the area corresponding to all values of the test statistic that cause us to reject the null hypothesis. For a two-sided test, the rejection or critical region is both of the extreme regions/tails under the curve. For a left-tailed, this is the left-most extreme region under the curve. For the right-tailed, this is the right-most extreme region under the curve.
 
 #### Outcomes
 
-If we *fail to reject the null hypothesis*, this suggests that there is no statistically significant difference between whatever was compared. We may even say that random chance alone could explain any difference that is observed.
+In general, the sample or data must provide sufficient evidence to reject the null hypothesis and conclude that there is an effect or difference which exists in sample compared to the population. Ideally, a hypothesis test fails to reject the null hypothesis when the effect or difference is not present, and it rejects the null hypothesis when the effect or difference exists.
 
-If we *reject the null hypothesis*, this suggests that there is a statistically signficant difference between whatever was compared. We may even say that random chance alone could not explain any difference that was observed.
+If we *fail to reject the null hypothesis*, this suggests that there is a lack of evidence or no statistically significant difference between whatever was compared. Another way to say this may be that random chance alone could explain any difference that was observed. (this latter sentence will become more concrete when we nail down significance levels)
+
+If we *reject the null hypothesis*, this suggests that there is evidence of a statistically significant difference between whatever was compared. Another way to say this may be that random chance alone could not explain any difference that was observed. (this latter sentence will become more concrete when we nail down significance levels)
+
+## Looking forward -- we'll formalize the steps and terminology of hypothesis testing as well as what Type I and Type II errors in hypothesis testing are.
 
 ## Lecture Note Resources
 
