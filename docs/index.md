@@ -14,7 +14,7 @@
 ### Resources
 * [GitHub tutorial for homework and projects](resourcedev/tutorials/github.html)
 * [Outside primer/intro on probability](https://www0.gsb.columbia.edu/faculty/pglasserman/B6014/probability.pdf)
-
+* [List of relevant free textbooks with linked pdfs](resourcedev/index.html)
 
 ### Pre-course info
 * [Github](https://github.com) will be used to post and turn in all assignments as well as directly provide feedback to students. If you do not have a GitHub account, create a free account.
