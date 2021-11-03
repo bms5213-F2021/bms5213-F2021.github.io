@@ -6,7 +6,7 @@
   * This textbook is written by Rafael a Irizarry and Michael I Love
   * It has an introduction and some labs for R starting on page 5 in the textbook, page 11 in the pdf.
   * As a whole, this book will be most useful for lectures on plotting, random variables, probability distributions, estimation, hypothesis testing, power calculations, linear regression, & ANOVA.
-* [Biostatistics with R: An Introduction to Statistics Through Biological Data](textbook_pdfs/)
+* [Biostatistics with R: An Introduction to Statistics Through Biological Data](textbook_pdfs/Shahbaba2012_Book_BiostatisticsWithR.pdf)
   * This textbook is written by Babak Shahbaba
   * Appendix B has an introduction to R, page 323 in the textbook, page 326 in the pdf.
   * As a whole, this book is extremely useful for lectures on summary stats, plotting, data cleaning/preprocessing, probability, random variables, probability distributions, estimation, hypothesis testing, linear regression, & ANOVA
