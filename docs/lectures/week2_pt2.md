@@ -205,9 +205,9 @@ We also briefly discussed (without calling it this) that the rejection region or
 
 In general, the sample or data must provide sufficient evidence to reject the null hypothesis and conclude that there is an effect or difference which exists in sample compared to the population. Ideally, a hypothesis test fails to reject the null hypothesis when the effect or difference is not present, and it rejects the null hypothesis when the effect or difference exists.
 
-If we *fail to reject the null hypothesis*, this suggests that there is a lack of evidence or no statistically significant difference between whatever was compared. Another way to say this may be that random chance alone could explain any difference that was observed. (this latter sentence will become more concrete when we nail down significance levels)
+If we *fail to reject the null hypothesis*, this suggests that there is a lack of evidence or no statistically significant difference between whatever was compared. Another way to say this is that the data is compatible with the null hypothesis and there is no evidence, or not sufficient evidence, of a difference.
 
-If we *reject the null hypothesis*, this suggests that there is evidence of a statistically significant difference between whatever was compared. Another way to say this may be that random chance alone could not explain any difference that was observed. (this latter sentence will become more concrete when we nail down significance levels)
+If we *reject the null hypothesis*, this suggests that there is evidence of a statistically significant difference between whatever was compared. Another way to say this is that the data are incompatible with the null hypothesis, and there is sufficient evidence to warrant rejection of the null hypothesis.
 
 ## Looking forward -- we'll formalize the steps and terminology of hypothesis testing as well as what Type I and Type II errors in hypothesis testing are.
 
