@@ -37,7 +37,7 @@ A *95% confidence interval is a random interval with a 95% probability of fallin
 
 ### The Sampling distribution
 
-There's another distribution that's important to us that we haven't discussed yet. This is called the *Sampling distribution*. The reason it is so important is that ... *Central Limit Theorem*
+There's another distribution that's important to us that we haven't discussed yet. This is called the *Sampling distribution*. The *Sampling distribution* is the probability distribution for estimators such as the sample mean by which we get point estimates. The reason estimators get their own distribution is that the value of the estimate depends on the specific sample selected from the population and will differ for each sample. If we repeat sampling many times, we will get many different values for the estimate, but we'll sometimes have overlap. For this reason, estimators are also considered random variables and have their own distribution, the *sampling distribution*. The reason this is so important is that the sampling distribution is often approximately normally distributed if the sample size is large enough and observations are independent. This approximate normal distribution of the sampling distribution is centered around the true value/parameter that we are trying to estimate. It's also due to something called the *Central Limit Theorem*. This is true no matter which distribution the original data is from. And this then allows us to find confidence intervals in the same way no matter the underlying data distribution, and to assume something called the 68-95-99.7% rule for normal distributions. We'll see examples of this in lecture.
 
 ## Hypothesis Testing
 
@@ -99,11 +99,11 @@ For our example of screening for HIV in blood donors, a true negative would occu
 
 ### p-values & effect sizes
 
-Last week when we were getting acquainted with the mechanics of hypothesis testing in R, we followed the old adage that results were statistically significant if p < 0.05. But what is *p* and what does it mean? Why p < 0.05? Here we'll define what a p-value is and discuss how p-values are commonly misunderstood or misused.
+Last week when we were getting acquainted with the mechanics of hypothesis testing in R, we followed the old adage that results were statistically significant if p <= 0.05. But what is *p* and what does it mean? Why p <= 0.05? The 0.05 is commonly used as that's a small false positive rate. Here we'll define what a p-value is and discuss how p-values are commonly misunderstood or misused.
 
-When a difference exists, the *effect size* communicates the magnitude of the difference.
+When a difference exists, the *effect size* communicates the magnitude of the difference. Effect size is discussed in this [Nature Methods article](https://raw.githubusercontent.com/bms5213-F2021/bms5213-F2021.github.io/master/docs/resourcedev/papers/Fickle_P-value.pdf) which we will focus on more when we consider power and power analyses
 
-I highly recommend reading the ASA statement on statistical significance and P-values. This is linked on the course website already, and can be found [here](https://github.com/bms5213-F2021/bms5213-F2021.github.io/raw/master/docs/resourcedev/papers/asa_pval_statement.pdf), but I'll provide the highlights throughout the sections below.
+I highly recommend reading the The American Statistical Association (ASA) statement on statistical significance and P-values. This is linked on the course website already, and can be found [here](https://github.com/bms5213-F2021/bms5213-F2021.github.io/raw/master/docs/resourcedev/papers/asa_pval_statement.pdf), but I'll provide the highlights throughout the sections below.
 
 #### Definitions
 
@@ -119,25 +119,44 @@ A P-value is ...
 * *A p-value can indicate how incompatible the data are with a specified statistical model.*
   * The statistical model is proposed for a particular set of data and is combined with a set of assumptions and a *null hypothesis*. As we've discussed, this *null hypothesis* states the absence of an effect (no difference between two groups), or the absence of a relationship between a factor (independent variable) and an outcome (dependent variable) (e.g. we've briefly discussed testing if the Beta parameters from regression are different from 0 or not).
   * The smaller the p-value, the greater the statistical incompatibility of the data with the null hypothesis if the assumptions are true. This provides evidence against the null hypothesis or the assumptions. Note however that this does not mean that smaller p-values are more important or have larger effects than other larger p-values. We'll discuss this later.
-* A p-value depends on the sample size(s) and the observed effect size (or difference between what is being compared)
+* A p-value depends on both the sample size(s) and the observed effect size (or difference between what is being compared). In this sense, the p-value is *confounded* since both the effect size and the sample size are part of deriving the p-value.
 
 A P-value isn't ...
 
-* *A p-value does not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.*
+* *A p-value does not measure the probability that the studied hypothesis is true, or the probability that the data were produced by random chance alone.* P-values cannot provide proof of the alternative hypothesis. Additionally, while the null hypothesis has an implicit assumption that two things are equal, and any deviation from this equality could be from chance, if the null hypothesis is true, stating conclusions in terms of "random chance" can often be misleading.
 
-* *A p-value, or statistical significance, does not measure the size of an effect or the importance of a result*
+* *A p-value, or statistical significance, does not measure the size of an effect or the importance of a result* The effect size is part of calculating the p-value but the p-value does not report the actual effect size. Nor does the size of the p-value automatically tell us something about the effect size. Similarly, if a sample size is too small, a large effect size may have a large/non-significant p-value.
 
-* *By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis*
-
+* *By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis* Data analyses should not end with calculating a p-value; rather hypothesis testing should be used in conjunction with other approaches, especially if deciding between multiple models. P-values should not be reported by themselves, but rather should be reported together with confidence intervals and effect sizes.
 
 #### What we shouldn't do with p-values
 
-* Because p-values depend on the sample size as well as the effect size, it is not appropriate to compare the size of p-values to each other. One being smaller than the other could be due to differences in sample sizes.
+* Because p-values depend on the sample size as well as the effect size, it is not appropriate to compare the size of p-values to each other. One being smaller than the other could be due to differences in sample sizes. Here's an example in an xkcd comic where by increasing the sample size the researchers can find a p-value < 0.05. The fact that sample size has an effect on hypothesis testing outcomes is another reason why it is so important to decide on sample size and other logistics before ever collecting or looking at the data (as we discussed in the first section of these lectures notes)
 
-### Multiple Hypothesis Testing
+![sample size](../figures/xkcd_sample_size.png)
 
-### Are there alternatives to the p-value?
+* If we want to make conclusions or decisions like choosing between models, there are other methods we can use like likelihood ratios, etc, which we will discuss later. Of importance, we should consider study designs, data quality, external evidence, validity of assumptions for the phenomenon under study as well as the data analysis. There are comical examples where p-values can be below the common threshold for significance but the claim is outrageous. The below figure from an [article by Regina Nuzzo (which I would also recommend reading)](https://github.com/bms5213-F2021/bms5213-F2021.github.io/raw/master/docs/resourcedev/papers/Fickle_P-value2.pdf) makes the point that we should consider how likely the hypothesis is to begin with or how much the actual observed difference means to us. The article has a fantastic example of a survey on the divorce rate and happiness for couples who met online. Another example in the Biostatistics with R textbook in chapter 7, pg 180 about body temperature, where with a large enough sample size we could show a statistically significant difference between 98.25 and 98.6 degrees for healthy individuals. In practice, we likely wouldn't consider this effect size of 0.35 to be biologically relevant.
+
+![prob cause](../figures/pval_prob.png)
+
+### Multiple Hypothesis Testing Motivation
+
+As discussed earlier, the false positive rate multiplied by the number of tests that are performed can give you an estimate of the number of false positive statistically significant results you can expect. In this example xkcd comic below, there are 21 hypothesis tests and a false positive rate of 0.05. We see one false positive.
+
+![xkcd false discovery](../figures/fdr_significant.png)
+
+Therefore, when there are many hypotheses tests, we often further control the threshold for statistical significance so as to reduce the number of "acceptable" false positives. We will discuss these methods later.
+
+### Looking forward -- Alternatives and additions to the p-value, calculating sample sizes + power analyses, Multiple hypothesis testing methods
+
 
 ## References
-
-* [P-values and effect sizes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/)
+* [Biostatistics with R](https://bms5213-f2021.github.io/resourcedev/textbook_pdfs/Shahbaba2012_Book_BiostatisticsWithR.pdf)
+* [Statistical Errors by Regina Nuzzo](https://github.com/bms5213-F2021/bms5213-F2021.github.io/raw/master/docs/resourcedev/papers/Fickle_P-value2.pdf)
+* [The fickle P value generates irreproducible results](https://raw.githubusercontent.com/bms5213-F2021/bms5213-F2021.github.io/master/docs/resourcedev/papers/Fickle_P-value.pdf)
+* [ASA Statement](https://github.com/bms5213-F2021/bms5213-F2021.github.io/raw/master/docs/resourcedev/papers/asa_pval_statement.pdf)
+* [Using Effect Size—or Why the P Value Is Not Enough](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3444174/)
+* Basic & Clinical Biostatistics (5th Edition), by Susan White, published by McGraw Hill
+* Biostatistics for the Biological and Health Sciences (2nd Edition), by Marc Triola, Mario F. Triola, & Jason Roy, published by Pearson
+* Modern Statistics for Modern Biology (2019), by Susan Holmes & Wolfgang Huber, published by Cambridge University Press
+* [Data Analysis for the Life Sciences](https://bms5213-f2021.github.io/resourcedev/textbook_pdfs/dataanalysisforthelifesciences.pdf)
