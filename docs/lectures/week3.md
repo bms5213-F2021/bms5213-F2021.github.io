@@ -1,7 +1,5 @@
 # Week 4
 
-**These are still being updated**
-
 ## Week 4 Learning Objectives
 
 By the end of Week 4, you will be able to
