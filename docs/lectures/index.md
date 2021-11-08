@@ -4,4 +4,4 @@
 * Week 1 Part 2 Lecture Notes: [Data](week1_pt2.html)
 * Week 2 Part 1 Lecture Notes: [Distributions & Estimation](week2_pt1.html)
 * Week 2 Part 2 Lecture Notes: [Distributions & Estimation cont.](week2_pt2.html)
-* Week 3 Lectures Notes: [Statistical Inference & Hypothesis Testing](week3.html)
+* Week 3 & 4 Lectures Notes: [Statistical Inference & Hypothesis Testing](week3.html)
