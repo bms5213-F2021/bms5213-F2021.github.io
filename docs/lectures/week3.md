@@ -137,7 +137,7 @@ A P-value isn't ...
 
 * If we want to make conclusions or decisions like choosing between models, there are other methods we can use like likelihood ratios, etc, which we will discuss later. Of importance, we should consider study designs, data quality, external evidence, validity of assumptions for the phenomenon under study as well as the data analysis. There are comical examples where p-values can be below the common threshold for significance but the claim is outrageous. The below figure from an [article by Regina Nuzzo (which I would also recommend reading)](https://github.com/bms5213-F2021/bms5213-F2021.github.io/raw/master/docs/resourcedev/papers/Fickle_P-value2.pdf) makes the point that we should consider how likely the hypothesis is to begin with or how much the actual observed difference means to us. The article has a fantastic example of a survey on the divorce rate and happiness for couples who met online. Another example in the Biostatistics with R textbook in chapter 7, pg 180 about body temperature, where with a large enough sample size we could show a statistically significant difference between 98.25 and 98.6 degrees for healthy individuals. In practice, we likely wouldn't consider this effect size of 0.35 to be biologically relevant.
 
-![prob cause](../figures/pval_prob.pdf)
+![prob cause](../figures/pval_prob.png)
 
 ### Multiple Hypothesis Testing Motivation
 
