@@ -26,7 +26,7 @@ We've discussed that statistical inference is particularly interested in making 
 
 In several examples last week we calculated specific statistics for a sample such as the sample mean, a sample proportion, the sample probability of success, etc. In these cases, these were what are called *point estimates* for the corresponding population parameter. *Point estimates* involve specific numbers rather than an interval or a range. We are estimating the population parameter from the observed statistic. Point estimates are often notated as the summary stat or parameter's greek letter with a hat on it. But these point estimates do not reflect any uncertainty we have in the estimate, and we should have some uncertainty because we are estimating from a sample rather than looking at the population itself.
 
-*Confidence Intervals* (CI) are one means of communicating this uncertainty. Rather than a specific value, a confidence interval is a range of values. A confidence interval is a *point estimate* +- a *margin of error*. The margin of error is found by using a *confidence level*, the *standard deviation*, and the *number of samples*.
+*Confidence Intervals* (CI) are one means of communicating this uncertainty. Rather than a specific value, a confidence interval is a range of values. A confidence interval is a *point estimate* +- a *margin of error*. The margin of error is found by using a *critical value* (which is related to a *confidence level*), the *standard deviation*, and the *number of samples*.
   * Specifically, the *confidence level* of a confidence interval is the probability 1 - alpha that the confidence interval actually does contain the population parameter, assuming the estimation process is repeated a large number of times.
     * *alpha* is also known as the *significance level*
   * If known, the population's standard deviation is used; otherwise, the sample's point estimate of the standard deviation should be used.
@@ -44,6 +44,7 @@ Many sources list the steps of a hypothesis test in different orders, but by far
 1. Decide on the effect that you are interested in, design a suitable experiment or study, pick a data summary function and *test statistic*
 2. Set up a *null hypothesis*, which is a simple, computationally tractable model of reality that lets you compute the *null distribution* (the possible outcomes of the test statistic and their probabilities under the assumption that the null hypothesis is true)
 3. Decide on the *rejection region* or the subset of possible outcomes whose total probability is small, for which you will reject the null hypothesis.
+  * The *critical value* is the value that a test statistic must exceed (in an absolute value sense) for the null hypothesis to be rejected; it'll be test specific
 4. Do the experiment and collect the data (or download the data if already available); compute the *test statistic* that was decided on in step 1.
 5. Make a decision: reject the null hypothesis if the test statistic is in the rejection region or fail to reject the null hypothesis if the test statistic is not in the rejection region
   * In the case of rejecting the null hypothesis, we conclude that the null hypothesis is unlikely to be true
@@ -51,8 +52,7 @@ Many sources list the steps of a hypothesis test in different orders, but by far
 
 ### What is a test-statistic and its null distribution?
 
-A *test-statistic* is a value that is used in making a decision about the null hypothesis. It is often found by converting observed sample (summary) statistics (e.g., mean, proportion, etc.) to a score (e.g., z, t, or chi-square, etc.) with the assumption that the null hypothesis is true. For these commonly used scores/test statistics, there are often closed-form equations/distributions. In these cases, how do you know which test-statistic to use? Note that all of these commonly used scores/test statistics require specific assumptions. We will cover the assumptions and what test-statistics you want
-to use later.
+A *test-statistic* is a value that is used in making a decision about the null hypothesis. It is often found by converting observed sample (summary) statistics (e.g., mean, proportion, etc.) to a score (e.g., z, t, or chi-square, etc.) with the assumption that the null hypothesis is true. For these commonly used scores/test statistics, there are often closed-form equations/distributions. In these cases, how do you know which test-statistic to use? Note that all of these commonly used scores/test statistics require specific assumptions. We will cover the assumptions and what test-statistics you want to use later.
 
 Note that for the major hypothesis-testing functions we used in R in class and the homework, the function computes the appropriate test-statistic for you. So as long as the assumptions of the test are met, the correct test-statistic will be computed.
 
