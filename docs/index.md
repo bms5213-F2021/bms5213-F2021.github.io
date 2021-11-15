@@ -10,7 +10,9 @@
   * 10/28/21 -- [Distributions & Estimation cont.](lectures/week2_pt2.html)
   * 11/02/21 -- No Class
   * 11/04/21 -- Review
-  * 11/08/21 -- [Statistical Inference & Hypothesis Testing](lectures/week3.html)
+  * 11/09/21 -- [Statistical Inference & Hypothesis Testing](lectures/week3.html)
+  * 11/11/21 -- [Specific Hypothesis Tests](lectures/week4_specifictests.html)
+  * 11/16/21 -- [Transformations, Correlation, & Regression](lectures/week5_regression.html)
 
 ### Resources
 * [GitHub tutorial for homework and projects](resourcedev/tutorials/github.html)

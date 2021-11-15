@@ -2,6 +2,8 @@
 
 **This will be a dynamic resource**
 
+### Binomial test
+
 ### t-test
 
 An assumption of the t-test is that the observations/data or sampling distribution (in case of sample means, etc.) should be normally distributed.
@@ -42,5 +44,3 @@ This test can be performed as a one- or two-sample test. As a one- sample test, 
 As a two-sample test, it compares two samples of data to each other. The null hypothesis is that the distribution which generated the two samples of data is the same. (e.g., the two samples are distributed according to the same continuous distribution.)
 
 The R function `ks.test()` can be used for this.
-
-Because continuous distributions
